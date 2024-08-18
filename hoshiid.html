@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOSHI WO OU KODOMO</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul class="links">
+        <li class="link"><a href="index.html">HOME</a></li>
+        <li class="link"><a href="#logo-footer">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="content-container">
+      <br />
+      <img src="img/hoshi wo ou kodomo.jpg" alt="" />
+      <br />
+      <h1>HOSHI WO OU KODOMO</h1>
+      <p class="sinopsis">
+        Jika kamu bisa mengubah semua kenanganmu menjadi sebuah lagu, apa jadinya?
+        Antara menjadi siswa luar biasa dan mengurus rumah sendirian
+        selama ibunya tidak ada, satu-satunya gangguan Asuna Watase adalah
+        mendengarkan radio kristal lamanya di tempat persembunyian rahasianya di gunung. Satu
+        suatu hari, dia secara tidak sengaja menyetel melodi yang misterius dan melankolis,
+        berbeda dari apa pun yang pernah dia dengar sebelumnya. Segera setelah itu, sebuah
+        anak laki-laki misterius bernama Shun menyelamatkannya dari makhluk berbahaya,
+        tanpa sadar menyeret Asuna dalam perjalanan jauh menuju daratan yang telah lama hilang
+        untuk melampaui imajinasinya, mengubah kehidupan melodinya menjadi sebuah
+        upacara peringatan yang rumit.
+      </p>
+      <p class="imdb"><i data-feather="star"></i>7.5/10 MyAnimeList</p>
+    </div>
+    <div class="vid">
+      <iframe id="videoFrame" src="https://drive.google.com/file/d/14Ic6Y1javhUVX69E9hHB0LYiq0SN5khD/preview"></iframe>
+      <!-- <h1>not available</h1> -->
+      <button class="fullscreen-button" onclick="toggleFullscreen()">
+        Fullscreen
+      </button>
+      <h4>
+        gunakan tombol diatas jika tombol fullscreen di video tidak berfungsi
+      </h4>
+      <a href="https://drive.google.com/uc?export=download&id=14Ic6Y1javhUVX69E9hHB0LYiq0SN5khD">
+        <button class="fullscreen-button">Download this video</button>
+      </a>
+    </div>
+    <br /><br />
+    <footer>
+      <div id="logo-footer" class="logo-footer">
+        <h1 class="logo">JIJEL<span>STREAM</span>.</h1>
+        <p>find me on</p>
+        <div class="social">
+          <ul class="links">
+            <li class="link">
+              <a href="https://instagram.com/_azizle"
+                ><i data-feather="instagram"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a
+                href="https://www.facebook.com/share/kQuuMPs4g23XLcJJ/?mibextid=qi2Omg"
+                ><i data-feather="facebook"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="https://youtube.com/@AzizleAMV"
+                ><i data-feather="youtube"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href=""><i data-feather="twitter"></i></a>
+            </li>
+            <li class="link">
+              <a href="https://wa.me/+6289614406368"
+                ><i data-feather="message-circle"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="mailto:slayserz567@gmail.com"
+                ><i data-feather="mail"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="https://github.com"><i data-feather="github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="credito">credit to</p>
+        <div class="credit">
+          <ul>
+            <li>
+              <a href="#"><h4>samehadaku</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>animeheaven</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>batchid</h4></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleFullscreen() {
+        const iframe = document.getElementById("videoFrame");
+        if (!document.fullscreenElement) {
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.mozRequestFullScreen) {
+            iframe.mozRequestFullScreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+    </script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

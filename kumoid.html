@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUMO NO MUKOU</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul class="links">
+        <li class="link"><a href="index.html">HOME</a></li>
+        <li class="link"><a href="#logo-footer">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="content-container">
+      <br />
+      <img src="img/kumo no muko, yakusoku no basho.jpg" alt="" />
+      <br />
+      <h1>KUMO NO MUKOU</h1>
+      <p class="sinopsis">
+        Hiroki Fujisawa dan Takuya Shirakawa mengagumi dua hal dalam hidup mereka: teman sekelas mereka Sayuri Sawatari dan Menara Ezo yang luas yang berdiri tanpa batas di seberang Selat Tsugaru. Terpesona oleh struktur tak terbatas yang berada di luar jangkauan mereka, Hiroki dan Takuya mulai membuat pesawat terbang dari drone jatuh yang mereka temukan—menamakannya Bella Ciela—untuk mewujudkan impian mereka suatu hari nanti mencapai puncak menara yang menjulang tinggi. Kemudian bergabung dengan gadis yang mereka cintai, Hiroki dan Takuya berjanji pada Sayuri untuk terbang bersamanya ke puncak yang tampaknya seperti dunia lain bersama-sama. Namun, Jepang mengalami perpecahan Utara-Selatan yang memicu konflik di dekat dasar menara, yang menandai perbatasan antara pulau-pulau Selatan yang dikuasai Amerika dan wilayah Utara yang diduduki oleh Uni Soviet.
+      </p>
+      <p class="imdb"><i data-feather="star"></i>7.4/10 MyAnimeList</p>
+    </div>
+    <div class="vid">
+      <iframe
+        id="videoFrame"
+        src="https://drive.google.com/file/d/14GY0t7VE_gDhE_hEFE61Bh44O_ep98iL/preview"
+      ></iframe>
+      <!-- <h1>not available</h1> -->
+      <button class="fullscreen-button" onclick="toggleFullscreen()">
+        Fullscreen
+      </button>
+      <h4>
+        gunakan tombol diatas jika tombol fullscreen di video tidak berfungsi
+      </h4>
+      <a href="https://drive.google.com/uc?export=download&id=14GY0t7VE_gDhE_hEFE61Bh44O_ep98iL">
+        <button class="fullscreen-button">Download this video</button>
+      </a>
+    </div>
+    <br /><br />
+    <footer>
+      <div id="logo-footer" class="logo-footer">
+        <h1 class="logo">JIJEL<span>STREAM</span>.</h1>
+        <p>find me on</p>
+        <div class="social">
+          <ul class="links">
+            <li class="link">
+              <a href="https://instagram.com/_azizle"
+                ><i data-feather="instagram"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a
+                href="https://www.facebook.com/share/kQuuMPs4g23XLcJJ/?mibextid=qi2Omg"
+                ><i data-feather="facebook"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="https://youtube.com/@AzizleAMV"
+                ><i data-feather="youtube"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href=""><i data-feather="twitter"></i></a>
+            </li>
+            <li class="link">
+              <a href="https://wa.me/+6289614406368"
+                ><i data-feather="message-circle"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="mailto:slayserz567@gmail.com"
+                ><i data-feather="mail"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="https://github.com"><i data-feather="github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="credito">credit to</p>
+        <div class="credit">
+          <ul>
+            <li>
+              <a href="#"><h4>samehadaku</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>animeheaven</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>batchid</h4></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleFullscreen() {
+        const iframe = document.getElementById("videoFrame");
+        if (!document.fullscreenElement) {
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.mozRequestFullScreen) {
+            iframe.mozRequestFullScreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+    </script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
